@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 손안의 AI 폐기물 처리 도우미</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js"  type="module"></script>
+    <link rel="stylesheet" href="/css/sub.css"> <!-- subpage -->
+    
+    <link type="text/css" rel="stylesheet" href="/css/chatbot.css"> <!-- chatbot -->
+    <link type="text/css" rel="stylesheet" href="/css/chatbotmap.css"> <!-- chatbot - map --> 
+
+    <script src="/js/common.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="headerInner">
+                <h1 class="logo"><a href="#none" class="logoLink"><img src="/images/common/logo.svg" alt="내 손안의 폐기물 처리 도우미 로고 이미지"></a></h1>
+                <div class="userToggle">
+                    <button class="toggleBtn individual active">
+                        <p class="toggleText">개인</p>
+                    </button>
+                    <button class="toggleBtn business">
+                        <p class="toggleText">사업자</p>
+                    </button>
+                </div>
+                <nav class="lnb">
+                    <ul class="depth1">
+                        <li class="depth1Item">
+                            <a href="#none" class="depth1Toggle accordion">알림/소통</a>
+                            <ul class="depth2">
+                                <li class="depth2Item">
+                                    <a href="#none" class="depth2Link"><i class="depth2Icon faq"></i>FAQ</a>
+                                </li>
+                                <li class="depth2Item">
+                                    <a href="#none" class="depth2Link"><i class="depth2Icon bell"></i>알림</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1Item">
+                            <a href="#none" class="depth1Toggle download">앱 다운로드</a>
+                            <ul class="depth2">
+                                <li class="depth2Item">
+                                    <a href="#none" class="depth2Link lottie">
+                                        <dotlottie-wc src="https://lottie.host/14be99b3-d217-42f4-b556-d7274397c5de/sQJT0FR4ST.lottie" style="width: 120px; height: 36px" autoplay ></dotlottie-wc>
+                                        <script>
+                                            import React from 'react';
+                                            import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+                                            const App = () => {
+                                            return (
+                                                <DotLottieReact
+                                                src="https://lottie.host/14be99b3-d217-42f4-b556-d7274397c5de/sQJT0FR4ST.lottie"
+                                                loop
+                                                autoplay
+                                                />
+                                            );
+                                            };
+                                        </script>
+                                    </a>
+                                </li>
+                                <li class="depth2Item">
+                                    <a href="#none" class="depth2Link lottie"><dotlottie-wc src="https://lottie.host/539b663c-ca86-43b3-a45d-e9c97accc192/FqbNUYZcpl.lottie" style="width: 120px;height: 36px" autoplay ></dotlottie-wc></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="inner">
+
+                
+                <!-- chatbot -->
+                <div class="frameWrap">
+                    <div class="chatbotFrame">
+                        <div class="chatbotWrap">
+
+                            <div class="chatBubble user">
+                                <div class="message">무상수거서비스</div>
+                            </div>
+                            <div class="chatBubble user">
+                                <div class="message">무상수거서비스 알려줘</div>
+                            </div>
+                            <div class="chatBubble user">
+                                <div class="message">무상수거서비스를 이용하기 어려운 경우에 대해서 알려줘</div>
+                            </div>
+
+                            <div class="chatBubble ai">
+                                <div class="message">
+                                    더 편리한 방법은 <button type="button" class="textLink">대형폐기물 스티커 판매처 ↗</button>를 찾아갈 필요 없이 <button type="button"  class="textLink">"스마트클린 노원" ↗</button> 홈페이지를 이용하면 즉시 배출이 가능합니다.
+                                </div>
+                            </div>
+
+                            <div class="chatBubble ai">
+                                <div class="selectCard">
+                                    <p class="cardText">더 자세한 정보나 다른 배출 방법을 확인할까요?</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnDefault">아니오</button>
+                                        <button type="button" class="btnPrimary">예</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="selectCard">
+                                <button type="button" class="closeBtn">닫기</button>
+                                <p class="cardText">냉장고 뒷면의 냉각기(컴프레셔)가 파손되었거나, 임의로 떼어낸 적이 있으신가요?</p>
+                                <div class="btnGroup vertical">
+                                    <button type="button" class="btnOutline">네, 파손·분실 되었습니다.</button>
+                                    <button type="button" class="btnPrimary">아니요, 정상 작동 합니다.</button>
+                                </div>
+                            </div>
+
+                            <div class="infoYellowCard">
+                                <strong class="infoTitle">가장 가까운 방문 구매처(행정복지센터)</strong>
+                                <ul class="infoList">
+                                    <li>
+                                        <button type="button" class="textLink">상계6·7동 주민센터</button>(행정복지센터)
+                                    </li>
+                                    <li>
+                                        <button type="button" class="textLink">02-2116-2861</button>
+                                    </li>
+                                    <li>운영 시간: 평일 09:00~18:00</li>
+                                </ul>
+                            </div>
+
+                            <div class="companyCard">
+                                <h3 class="companyName">도성환경</h3>
+                                <div class="companyTop">
+                                    <div class="companyTopItem">
+                                        <span class="phoneNum">02-593-9283</span>
+                                        <div class="alignRight">
+                                            <button type="button" class="btnCopy"><i class="ico copy"></i>복사하기</button>
+                                            <button type="button" class="btnAction blue"><i class="ico tel"></i>전화걸기</button>
+                                        </div>
+                                    </div>
+                                    <div class="companyTopItem">
+                                        <span class="address">서울 성동구 청호대로 440, 인원빌딩 3층</span>
+                                        <div class="alignRight">
+                                            <button type="button" class="btnAction blue"><i class="ico map"></i>지도보기</button>
+                                        </div>
+                                    </div>
+                                    <div class="companyTopItem">
+                                        <p class="distance">거리 <span class="bold big">22km</span></p>
+                                        <div class="alignRight">
+                                            <button type="button" class="btnAction"><i class="ico map2"></i>길찾기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chatbotBtnbox">
+                            <button type="button" class="listenBtn active">읽어주기 <i class="ico speaker"></i></button>
+                        </div>
+                        <div class="inputBox">
+                        <dotlottie-wc src="https://lottie.host/4603cf36-a641-4487-82d3-5ee2595bedf8/r4bqmUAUgM.lottie" style="width: 50px;height: 50px" autoplay="" loop="" class="srchInpIcon"></dotlottie-wc>
+                        <input type="text" class="mainSearch" placeholder="AI 도우미에게 물어보세요."><button type="button" class="form-control-clear hidden">지우기</button>
+                        <button class="mainSearchBtn"><i class="srchBtnIcon"></i></button>
+                    </div>
+                    </div>
+                    <div class="mapFrame">
+                        <div class="mapWrap">
+                            <!-- 지도영역 -->
+                            <img src="/images/sub/img_submap.jpg" alt="지도 이미지" class="subMap">
+                            <!--  // 지도영역 -->
+                            <div class="mapSearchWrap">
+                                <div class="backBtnBox">
+                                    <button type="button" class="backbtn"><span class="blind">뒤로가기</span><i class="mapIco back"></i></button>
+                                    <p class="currentAddress">구로구 디지털로 33길 27</p>
+                                </div>
+                                <div class="areaSelectBoxWrap">
+                                    <div class="areaSelectBox">
+                                        <button type="button" class="areaOptionCurrent">서울특별시</button>
+                                        <div class="areaOptionList">
+                                            <button type="button" class="areaOption">서울특별시</button>
+                                            <button type="button" class="areaOption active" title="선택됨">부산광역시</button>
+                                            <button type="button" class="areaOption">대구광역시</button>
+                                            <button type="button" class="areaOption">인천광역시</button>
+                                            <button type="button" class="areaOption">광주광역시</button>
+                                            <button type="button" class="areaOption">대전광역시</button>
+                                            <button type="button" class="areaOption">울산광역시</button>
+                                            <button type="button" class="areaOption">세종특별자치시</button>
+                                            <button type="button" class="areaOption">경기도</button>
+                                            <button type="button" class="areaOption">강원도</button>
+                                            <button type="button" class="areaOption">충청북도</button>
+                                            <button type="button" class="areaOption">충청남도</button>
+                                            <button type="button" class="areaOption">전라북도</button>
+                                            <button type="button" class="areaOption">전라남도</button>
+                                            <button type="button" class="areaOption">경상북도</button>
+                                            <button type="button" class="areaOption">경상남도</button>
+                                            <button type="button" class="areaOption">제주특별자치도</button>
+                                        </div>
+                                    </div>
+                                    <div class="areaSelectBox">
+                                        <button type="button" class="areaOptionCurrent">관악구</button>
+                                        <div class="areaOptionList">
+                                            <button type="button" class="areaOption">관악구</button>
+                                            <button type="button" class="areaOption">강남구</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mapSelectWrap">
+                                    <div class="selectItem  active">
+                                        <input type="checkbox" id="select1" name="select1" checked>
+                                        <label for="select1"    class="pinType">전체보기</label>
+                                    </div>
+                                    <div class="selectItem">
+                                        <input type="checkbox" id="select2" name="select2">
+                                        <label for="select2">분리배출장소</label>
+                                    </div>
+                                    <div class="selectItem">
+                                        <input type="checkbox" id="select3" name="select3">
+                                        <label for="select3">무인회수기</label>
+                                    </div>
+                                    <div class="selectItem">
+                                        <input type="checkbox" id="select4" name="select4">
+                                        <label for="select4">물품교환처</label>
+                                    </div>
+                                    <div class="selectItem">
+                                        <input type="checkbox" id="select5" name="select5">
+                                        <label for="select5">폐가전 수거함</label>
+                                    </div>
+                                    <div class="selectItem">
+                                        <input type="checkbox" id="select6" name="select6">
+                                        <label for="select6">전지 수거함</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- // chatbot -->
+                
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="inner">
+                <div class="descWrap">
+                    <div class="footerLeft">
+                        <div class="footerLogo">
+                            <img src="/images/common/footer-logo.png" alt="">
+                        </div>
+                        <ul class="addressList">
+                            <li class="adressItem">22689 인천시 서구 환경로 42(오류동 종합환경연구단지)</li>
+                            <li class="adressItem">대표전화 <span class="adressCall">1644-0007</span></li>
+                        </ul>
+                    </div>
+                    <div class="keco">
+                        <img src="/images/common/ico_keco.png" alt="">
+                    </div>
+                </div>
+                <div class="copyrightWrap">
+                    <p class="copyright">Copyright 2026 ○ ○ ○ ○. All rightreserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

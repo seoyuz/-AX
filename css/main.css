@@ -28,6 +28,9 @@ input[type=text].mainSearch {
   box-sizing: border-box;
   font-size: 17px;
 }
+input[type=text].mainSearch::-moz-placeholder {
+  color: #8A949E;
+}
 input[type=text].mainSearch::placeholder {
   color: #8A949E;
 }
