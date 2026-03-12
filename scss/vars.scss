@@ -1,0 +1,191 @@
+// vars.scss
+// 디자인 시스템 색상
+$green50: #f0fdf4;
+$green100: #dcfce7;
+$green200: #bbf7d0;
+$green300: #86efac;
+$green400: #4ade80;
+$green500: #22c55e;
+$green600: #16a34a;
+$green700: #15803d;
+$green800: #166534;
+$green900: #14532d;
+$green950: #052e16;
+
+$slate50: #f8fafc;
+$slate100: #f1f5f9;
+$slate200: #e2e8f0;
+$slate300: #cbd5e1;
+$slate400: #94a3b8;
+$slate500: #64748b;
+$slate600: #475569;
+$slate700: #334155;
+$slate800: #1e293b;
+$slate900: #0f172a;
+$slate950: #020617;
+
+$red50: #fef2f2;
+$red500: #ef4444;
+$red600: #dc2626;
+
+$blue50: #eff6ff;
+$blue500: #3b82f6;
+
+$yellow50: #fefce8;
+$yellow500: #eab308;
+
+$white: #ffffff;
+$black: #000000;
+
+// Figma Extracted Colors
+$gray50: #f5f5f5;      
+$gray100: #e6e8ea;     
+$gray200: #d9d9d9;     
+$gray300: #cdd1d5;     
+$gray400: #cccccc;     
+$gray500: #999999;     
+$gray600: #8a949e;     
+$gray700: #858585;     
+$gray800: #6d7882;     
+$gray900: #676767;     
+
+$brandBlue100: #f2fbff;
+$brandBlue200: #ebf5ff;
+$brandBlue300: #9fcdff;
+$brandBlue400: #345ae4;
+$brandBlue500: #256ef4;
+$brandBlue600: #1eafe6;
+$brandBlue700: #007bff;
+$brandBlue800: #007db6;
+$brandBlue900: #0053c0;
+$brandNavy: #052b57;    
+
+$brandGreen100: #fafff4; 
+$brandGreen400: #82c21c; 
+$brandGreen500: #80c342; 
+$brandGreen600: #317f00; 
+$brandGreen700: #17ba77; 
+
+$accentPurple: #7234b5;  
+$accentPink: #f476ba;    
+$accentOrange: #ff7f51;  
+$accentBrown: #916f48;   
+
+$alertWarningBg: #fff7d5; 
+$alertWarningText: #f6ab0f;
+$alertErrorBg: #fffbf8;   
+$alertErrorText: #ff4b43; 
+
+$textDark100: #585858; 
+$textDark200: #3b3b3b; 
+$textDark300: #33363d; 
+$textDark400: #2d2d2d; 
+$textDark500: #2c2c2c; 
+$textDark600: #1e2124; 
+$textDark700: #1d1d1d; 
+
+$bgMain: #f8fafc;     
+$bgCard: #ffffff;
+$bgSidebar: #1e293b;  
+$bgHeader: #ffffff;
+$bgHover: #f1f5f9;    
+
+$textMain: #1d1d1d;      
+$textSecondary: #585858; 
+$textMuted: #999999;     
+$textInverted: #ffffff;
+$textLink: #256ef4;      
+
+$primary: #007bff;       
+$primaryColor: #007bff;
+$primaryHover: #0053c0;
+$primaryLight: #ebf5ff;
+
+$border: #d9d9d9;        
+$borderDefault: #e6e8ea; 
+$borderDark: #cdd1d5;    
+
+$statusSuccessBg: #fafff4;
+$statusSuccessText: #317f00;
+$statusErrorBg: #fffbf8;
+$statusErrorText: #ff4b43;
+$statusWarningBg: #fff7d5;
+$statusWarningText: #f6ab0f;
+
+$grayLight: #f5f5f5;      
+$borderLight: #e6e8ea;    
+$textLight: #999999;      
+$background: #ffffff;
+
+// Forms
+$formBorder: #dddddd;
+$formRequired: #d71921;
+$formRadioChecked: #455763;
+$formClearBtn: #555555;
+$formPlaceholder: #767676;
+
+// Spacing
+$space1: 4px;
+$space2: 8px;
+$space3: 12px;
+$space4: 16px;
+$space5: 20px;
+$space6: 24px;
+$space8: 32px;
+$space10: 40px;
+$space12: 48px;
+$space16: 64px;
+
+// FontSize
+$fontSans: '"Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
+$fontSize-small: 12px;
+$fontSize-base: 14px;
+$fontSize-medium: 16px;
+$fontSize-large: 20px;
+$fontSize-xlarge: 24px;
+$fontSize-xxlarge: 32px;
+
+$textXs: 12px;
+$textSm: 14px;
+$text15: 15px;  
+$textBase: 16px;
+$text17: 17px;  
+$textLg: 18px;
+$textXl: 20px;
+$text22: 22px;  
+$text2xl: 24px;
+$text3xl: 30px;
+$text4xl: 36px;
+
+$fontThin: 100;
+$fontLight: 300;
+$fontNormal: 400;  
+$fontMedium: 500;  
+$fontSemibold: 600;
+$fontBold: 700;    
+$fontExtrabold: 800;
+$fontBlack: 900;
+
+// Radius
+$radius-small: 4px;
+$radius-medium: 8px;
+$radius-large: 16px;
+$radius-round: 999px;
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-xl: 12px;
+$radius-xxl: 16px;
+$radius-full: 9999px;
+
+// Shadow
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)";
+$shadow-lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)";
+$shadow-xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)";
+
+// zIndex
+$zIndex-header: 60;
+$zIndex-sidebar: 50;
+$zIndex-modal: 100;
+$zIndex-tooltip: 110;

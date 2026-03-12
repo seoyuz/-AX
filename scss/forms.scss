@@ -1,0 +1,429 @@
+// forms.scss
+@import "./vars.scss";
+
+select,
+input,
+textarea,
+button {
+  font-family: "Pretendard", "Noto Sans KR", "Nanum Gothic", sans-serif;
+  font-size: inherit;
+  vertical-align: middle;
+  border: 0;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+  color: $textDark500;
+}
+
+select option {
+  color: $textDark500;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input:not([type="checkbox"], [type="radio"], [type="file"]) {
+  border: 1px solid $formBorder;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input.inp {
+  height: 38px;
+  padding: 17px 15px;
+  font-size: 14px;
+}
+
+select,
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 180px;
+  border: 1px solid $gray400;
+  padding: 3px 35px 3px 15px;
+  height: 38px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: $white url("/images/sub/ico_select.png") no-repeat right 10px top
+    50%;
+  background-size: 20px;
+  font-size: 14px;
+  color: $textDark500;
+}
+
+input[type="text"]:read-only,
+input[type="tel"]:read-only,
+input[type="email"]:read-only,
+input[type="number"]:read-only {
+  background-color: $grayLight;
+  color: $formPlaceholder;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+  box-sizing: border-box;
+  height: 38px;
+  padding: 10px 15px;
+  border: 1px solid $formBorder;
+  font-weight: 500;
+  width: auto;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $gray600;
+}
+
+.readonly {
+  background-color: $grayLight !important;
+  color: $textLight !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="text"]::-ms-clear,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 14px;
+  border: 1px solid $formBorder;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: $textDark500;
+  resize: none;
+}
+
+input[type="button"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+.required {
+  color: $formRequired;
+  position: relative;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.required::before {
+  content: "※";
+  font-weight: 700;
+  margin-right: 0;
+  color: $formRequired;
+  font-size: 14px;
+  top: -2px;
+  margin-left: 3px;
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.inp-tit {
+  display: inline;
+}
+.inp-tit .required {
+  background-color: $formRequired;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  text-indent: -99999px;
+  border-radius: 10px;
+  position: absolute;
+  right: -6px;
+  top: -1px;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"],
+.radio input[type="radio"] {
+  padding: 0;
+  width: 1px;
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  height: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.checkbox label {
+  color: $textDark500;
+  font-weight: 500;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0 0 30px;
+}
+
+.checkbox label::before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: $white;
+  border: 1px solid $textLight;
+  position: absolute;
+  cursor: pointer;
+  margin-right: 9px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+}
+
+.checkbox.type2 label::before {
+  border-radius: 0;
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  background: $white url("/images/sub/ico_check2.png") no-repeat center;
+  background-size: 12px;
+  opacity: 0.7;
+}
+
+.checkbox .right label {
+  padding-right: 34px;
+  position: relative;
+}
+.checkbox .right label::before {
+  margin-right: 0;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  left: auto;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  background: $white url("/images/sub/ico_check.png") no-repeat center;
+  background-size: 12px;
+}
+
+.checkbox input[type="checkbox"]:focus-visible + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid $black;
+  display: inline-block;
+}
+
+.checkbox.type2 input:checked + label::before {
+  opacity: 1;
+}
+
+.checkbox.big label {
+  color: $textDark500;
+  font-size: 18px;
+  font-weight: 500;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.checkbox.big label::before {
+  content: "";
+  background-color: $white;
+  border: 1px solid $textLight;
+  margin-right: 12px;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  top: -4px;
+}
+
+.checkbox.big input:checked + label::before {
+  background-size: 19px;
+}
+
+.checkbox.none,
+.radio.none {
+  margin-right: 0;
+}
+.checkbox.none label,
+.radio.none label {
+  font-size: 0;
+  padding: 0;
+}
+.checkbox.none label::before,
+.radio.none label::before {
+  margin-right: 0;
+  position: relative;
+  top: 0;
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before {
+  background-color: $borderLight;
+  border-color: $borderDark;
+}
+
+// radiostyles
+.radio {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.radio input[type="radio"]:checked + label::before {
+  border: 6px solid $formRadioChecked;
+}
+.radio input[type="radio"]:focus-visible + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid $black;
+  display: inline-block;
+}
+.radio label {
+  display: inline-block;
+  height: 100%;
+  line-height: 100%;
+  color: $textDark500;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0 0 0 30px;
+}
+.radio label::before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid $textLight;
+  position: absolute;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  top: -2px;
+  left: 0;
+}
+
+.radio.big label::before {
+  width: 28px;
+  height: 28px;
+}
+.radio.big input:checked + label::before {
+  border: 8px solid $formRadioChecked;
+}
+
+.radio.right {
+  margin-right: 10px;
+}
+.radio.right label {
+  padding-right: 34px;
+  position: relative;
+}
+.radio.right label::before {
+  margin-right: 0;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  left: auto;
+}
+
+.checkbox.mar0 label::before,
+.radio.mar0 label::before {
+  margin-right: 0;
+}
+
+.form-control-clear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: auto;
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  background: $formClearBtn;
+  text-indent: -99999px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  padding: 0;
+  float: right;
+  margin-left: -76px;
+  z-index: 1;
+}
+
+.form-control-clear::before,
+.form-control-clear::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 9px;
+  height: 1px;
+  background: $white;
+  border-radius: 2px;
+  margin-left: -4px;
+}
+.form-control-clear::before {
+  transform: rotate(45deg);
+}
+.form-control-clear::after {
+  transform: rotate(-45deg);
+}
+.form-control-clear.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  select {
+    padding: 0 15px;
+    padding-right: 30px;
+    background-position: right 12px top 50%;
+    min-width: auto;
+  }
+  .checkbox label {
+    font-size: 14px;
+  }
+  table.board-list {
+    table-layout: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  select {
+    min-width: auto;
+    margin: 0;
+  }
+}

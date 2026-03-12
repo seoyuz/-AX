@@ -1,0 +1,75 @@
+// mixins.scss
+@import './vars.scss';
+
+// 1. Flexbox 정렬 관련 믹스인
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 2. 텍스트 말줄임표 (Truncate)
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 2줄 이상 말줄임표 (Line Clamp)
+@mixin text-ellipsis-multi {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// 3. 접근성용 시각적 숨김 (Screen Reader Only)
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+// 4. 공통 포커스 링 (접근성)
+@mixin focus-ring {
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px $background, 0 0 0 4px $primary;
+  }
+}
+
+// 5. 스크롤바 커스텀
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $grayLight;
+    border-radius: $radius-round;
+    
+    &:hover {
+      background-color: $border;
+    }
+  }
+}
