@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* 카운트업효과 ============================== */ 
-    /* 251219 카운트업 효과 - 다시 보일 때마다 재생 (ej) */
+    /* 다시 보일 때마다 재생 (ej) */
     const counters = document.querySelectorAll(".counter");
 
     function startCount(el) {
@@ -102,6 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!el.dataset.start) el.dataset.start = '0';
         observer.observe(el);
     });
-    /* // 251219 카운트업 효과 - 다시 보일 때마다 재생 (ej) */
+    /* 다시 보일 때마다 재생 (ej) */
     /* 카운트업효과 ============================== */ 
 });
