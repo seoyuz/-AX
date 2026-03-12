@@ -1,5 +1,7 @@
 // MAIN PAGE
 .contents{padding: 40px 0 64px;}
+
+// 검색영역
 .searchWrap{width: 952px; margin: 0 auto;}
 .inputBox{position: relative;}
 .srchInpIcon{position: absolute; left: 16px; top: 50%; transform: translateY(-50%);}
@@ -9,6 +11,8 @@ input[type=text].mainSearch{width: 100%; height: 52px; padding-left: 74px; paddi
 .keywordText{display: inline-block; font-size: 17px; font-weight: 700; color: #1E2124;}
 .keywordList{display: inline-flex; flex-wrap: wrap; gap: 16px; margin-left: 16px;}
 .keywordLink{display: block; padding: 8px 20px; background-color: #FFFFFF; border-radius: 4px; font-size: 14px; color: #1E2124; border: 1px dashed #633AC3; border-radius: 40px; font-size: 14px;}
+
+// 비주얼영역
 .visual{margin: 0 auto; width: 480px; height: 210px;}
 .visualWrap{display: block; margin: 64px auto; text-align: center;}
 .mainVisual{display: inline-block; margin: 0 auto;}
@@ -16,6 +20,7 @@ input[type=text].mainSearch{width: 100%; height: 52px; padding-left: 74px; paddi
 .visualBold{font-weight: 700;}
 .visualNum{font-size: 64px; font-weight: 100; color: #345AE4;}
 
+// 폐기물리스트
 .wasteList{display: flex; gap: 24px; margin-top: 40px;}
 .wasteItem{width: 100%; border-radius: 20px;}
 .wasteLink{position: relative; display: block; padding: 20px; height: 380px; border-radius: 20px; box-shadow: 0px 0px 4px 0px #345AE4; background-position: right 20px bottom 20px; background-repeat: no-repeat; box-sizing: border-box; border: 2px solid transparent; transition: .3s ease;

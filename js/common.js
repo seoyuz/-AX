@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // 헤더
     const depth1 = document.querySelectorAll('.depth1Item')
     depth1.forEach(item => {
         const depth2 = item.querySelector('.depth2')
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 맨 위로
     const topBtn = document.querySelector(".topButton");
     topBtn.addEventListener("click", function () {
         window.scrollTo({
