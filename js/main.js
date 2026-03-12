@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* input/textarea.inp 지우기 버튼 동적 생성 (ej) */  
     // input.inp, textarea.inp 옆에 지우기 버튼 동적 추가
-    document.querySelectorAll('input.mainSearch').forEach(function(inp) {
+    document.querySelectorAll('input.inp').forEach(function(inp) {
         // 이미 버튼이 있으면 중복 추가 방지
         if (!inp.parentNode.querySelector('.form-control-clear')) {
             var clearBtn = document.createElement('button');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    document.querySelectorAll('input.mainSearch').forEach(function(inp) {
+    document.querySelectorAll('input.inp').forEach(function(inp) {
         inp.addEventListener('input', toggleClearButton);
         // 초기 상태 반영
         toggleClearButton({ target: inp });

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>내 손안의 AI 폐기물 처리 도우미</title>
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/main.css">
-    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js"  type="module"></script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js" type="module"></script>
     <script src="/js/common.js"></script>
     <script src="/js/main.js"></script>
 </head>
@@ -15,52 +15,25 @@
     <div class="wrap">
         <header class="header">
             <div class="headerInner">
-                <h1 class="logo"><a href="#none" class="logoLink"><img src="/images/common/logo.svg" alt="내 손안의 폐기물 처리 도우미 로고 이미지"></a></h1>
-                <div class="userToggle">
-                    <button class="toggleBtn individual active">
-                        <p class="toggleText">개인</p>
-                    </button>
-                    <button class="toggleBtn business">
-                        <p class="toggleText">사업자</p>
-                    </button>
-                </div>
+                <h1 class="logo"><a href="#none" class="logoLink"><img src="/images/common/logo.svg" alt="내 손안의 AI 폐기물 처리 도우미 로고 이미지"></a></h1>
                 <nav class="lnb">
                     <ul class="depth1">
                         <li class="depth1Item">
-                            <a href="#none" class="depth1Toggle accordion">알림/소통</a>
-                            <ul class="depth2">
-                                <li class="depth2Item">
-                                    <a href="#none" class="depth2Link"><i class="depth2Icon faq"></i>FAQ</a>
-                                </li>
-                                <li class="depth2Item">
-                                    <a href="#none" class="depth2Link"><i class="depth2Icon bell"></i>알림</a>
-                                </li>
-                            </ul>
+                            <a href="#none" class="depth1Link"><i class="depth1Icon faq"></i>FAQ</a>
                         </li>
                         <li class="depth1Item">
-                            <a href="#none" class="depth1Toggle download">앱 다운로드</a>
+                            <a href="#none" class="depth1Link"><i class="depth1Icon bell"></i>알림</a>
+                        </li>
+                        <li class="depth1Item">
+                            <a href="#none" class="depth1Toggle"><i class="depth1Icon download"></i>앱 다운로드</a>
                             <ul class="depth2">
                                 <li class="depth2Item">
                                     <a href="#none" class="depth2Link lottie">
-                                        <dotlottie-wc src="https://lottie.host/14be99b3-d217-42f4-b556-d7274397c5de/sQJT0FR4ST.lottie" style="width: 120px; height: 36px" autoplay ></dotlottie-wc>
-                                        <script>
-                                            import React from 'react';
-                                            import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-
-                                            const App = () => {
-                                            return (
-                                                <DotLottieReact
-                                                src="https://lottie.host/14be99b3-d217-42f4-b556-d7274397c5de/sQJT0FR4ST.lottie"
-                                                loop
-                                                autoplay
-                                                />
-                                            );
-                                            };
-                                        </script>
+                                        <dotlottie-wc src="https://lottie.host/14be99b3-d217-42f4-b556-d7274397c5de/sQJT0FR4ST.lottie" style="width: 160px; height: auto;" autoplay ></dotlottie-wc>
                                     </a>
                                 </li>
                                 <li class="depth2Item">
-                                    <a href="#none" class="depth2Link lottie"><dotlottie-wc src="https://lottie.host/539b663c-ca86-43b3-a45d-e9c97accc192/FqbNUYZcpl.lottie" style="width: 120px;height: 36px" autoplay ></dotlottie-wc></a>
+                                    <a href="#none" class="depth2Link lottie"><dotlottie-wc src="https://lottie.host/539b663c-ca86-43b3-a45d-e9c97accc192/FqbNUYZcpl.lottie" style="width: auto; height: auto;" autoplay ></dotlottie-wc></a>
                                 </li>
                             </ul>
                         </li>
@@ -73,7 +46,7 @@
                 <div class="searchWrap">
                     <div class="inputBox">
                         <dotlottie-wc src="https://lottie.host/4603cf36-a641-4487-82d3-5ee2595bedf8/r4bqmUAUgM.lottie" style="width: 50px;height: 50px" autoplay loop class="srchInpIcon"></dotlottie-wc>
-                        <input type="text" class="mainSearch" placeholder="AI 도우미에게 물어보세요.">
+                        <input type="text" class="mainSearch inp" placeholder="AI 도우미에게 물어보세요.">
                         <button class="mainSearchBtn"><i class="srchBtnIcon"></i></button>
                     </div>
                     <div class="keywordBox">
@@ -90,7 +63,7 @@
                     <div class="visual">
                         <dotlottie-wc src="https://lottie.host/d698016e-4319-49d7-86bb-34ec3e59bd20/KTY9MeHJ06.lottie" style="width: 480px; height: 210px" class="mainVisual" autoplay loop ></dotlottie-wc>
                     </div>
-                    <p class="visualText">내 손 안의 AI 폐기물 <span class="visualBold">처리 도우미</span> 서비스는 전국 <span class="visualNum">226</span>곳 지자체의 <br><span class="visualBold">폐기물 분리 배출 방법</span>을 안내하는 서비스 입니다.</p>
+                    <p class="visualText">내 손 안의 AI 폐기물 <span class="visualBold">처리 도우미</span> 서비스는 전국 <span class="visualNum counter" data-target="226">226</span>곳 지자체의 <br><span class="visualBold">폐기물 분리 배출 방법</span>을 안내하는 서비스 입니다.</p>
                 </div>
                 <ul class="wasteList">
                     <li class="wasteItem"><a href="#none" class="wasteLink bulky">
@@ -123,6 +96,7 @@
                     </li>
                 </ul>
             </div>
+            <button type="button" class="topButton"></button>
         </div>
         <footer class="footer">
             <div class="inner">

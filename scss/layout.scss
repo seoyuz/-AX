@@ -1,45 +1,39 @@
-
 // HEADER
 .header{box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
-    &Inner{max-width: 1440px; width: 94%; padding: 16px 0; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;}
+    &Inner{max-width: 1440px; width: 94%; padding: 12px 0; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;}
 }
 .logo{width: 260px;
     &Link{display: block;}
 }
-.userToggle{display: flex; padding: 3px; border: 1px solid #DDDDDD; border-radius: 28px; box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);}
-.toggleBtn{position: relative; padding-left: 40px; width: 174px; height: 46px; color: #585858; font-size: 22px; font-weight: 600; border-radius: 28px; background-color: transparent;
-    &::before{content: ''; display: inline; position: absolute; left: 3px; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; background-position: center; background-repeat: no-repeat; filter: brightness(120%) grayscale(1); border-radius: 50%; box-sizing: border-box;}
-    &.active{background-color: #345AE4; color: #FFFFFF;
-        &::before{filter: grayscale(0%);}
-    }
-}
-.toggleBtn.individual::before{background-image: url('/images/common/ico_user-type02.png');}
-.toggleBtn.business::before{background-image: url('/images/common/ico_user-type01.png');}
 
 //MENU
-.depth1{display: flex; gap: 16px;
+.depth1{display: flex; gap: 40px;
     &Item{position: relative; margin-top: 20px; padding-bottom: 20px; font-size: 20px; font-weight: 700; color: #3B3B3B;}
     &Item.active .depth2{display: block;}
+    &Link{display: block; padding: 13px 10px;}
     &Toggle{display: inline-block; padding: 13px 10px; vertical-align: middle;
-        &.accordion::after{background-image: url(/images/common/ico_accordion.png);}
-        &.download::after{background-image: url(/images/common/ico_download.png);}
-        &::after{content: ''; display: inline-block; margin-left: 8px; width: 20px; height: 20px; background-position: center; background-repeat: no-repeat; vertical-align: middle;}
-    }
-}
-.depth2{position: absolute; left: 0; padding: 16px 10px; width: 100%; text-align: center; background-color: #FFFFFF; border: 1px solid #EEEEEE; border-radius: 10px; z-index: 1; display: none;
-    &Item{display: block; font-size: 18px; font-weight: 500; color: #3B3B3B; border-radius: 6px; text-align: left; transition: .2s ease;
-        & + .depth2Item{margin-top: 16px;}
-        &:hover{background-color: #EEF2F7; color: #182C77;}
-    }
-    &Link{display: block; padding: 4px 8px; color: inherit;
-        &.lottie{width: 120px; height: 36px; padding: 0;}
+        &::after{content: ''; display: inline-block; margin-left: 8px; width: 20px; height: 20px; vertical-align: middle; background: url(/images/common/ico_accordion.png)center no-repeat;}
     }
     &Icon{display: inline-block; margin-right: 10px; width: 32px; height: 32px; vertical-align: middle; background-position: center; background-repeat: no-repeat; background-size: contain;
         &.faq{background-image: url('/images/common/ico_faq.png');}
         &.bell{background-image: url('/images/common/ico_bell.png');}
+        &.download{background-image: url('/images/common/ico_down.png');}
     }
 }
+.depth2{position: absolute; left: 0; padding: 16px 10px; width: 100%; text-align: center; background-color: #FFFFFF; border: 1px solid #EEEEEE; border-radius: 10px; z-index: 1; display: none;
+    &Item{display: block; font-size: 18px; font-weight: 500; color: #3B3B3B; text-align: left;
+        & + .depth2Item{margin-top: 16px;}
+    }
+    &Link{display: block; text-align: center;
+        &.lottie{width: 100%; height: auto; padding: 0; vertical-align: top;}
+    }
+}
+dotlottie-wc {display: block; vertical-align: top; box-sizing: border-box;}
 
+//TOPBUTTON
+.topButton{position: sticky; left: calc(100% - 90px); bottom: 60px; width: 40px; height: 40px; background: #F5F5F5 url(/images/common/ico_arrow.png) center no-repeat; border-radius: 50%; transition: .2s ease;
+    &:hover{background-color: #EBEBEB;}
+}
 
 // FOOTER
 .footer{padding: 40px 0  24px; background: #F5F5F5; border-top: 1px solid #DDDDDD; color: #3B3B3B;}
