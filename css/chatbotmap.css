@@ -1,0 +1,145 @@
+.subMap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.mapWrap {
+  padding: 20px;
+}
+
+.mapSearchWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-bottom: 20px;
+}
+
+.backBtnBox {
+  width: calc(100% - 445px);
+  display: inline-block;
+  vertical-align: middle;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  position: relative;
+  padding: 13px 20px;
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.backbtn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  padding: 0;
+  background: none;
+}
+
+.currentAddress {
+  color: #2c2c2c;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 28px;
+}
+
+.areaSelectBoxWrap {
+  width: 425px;
+  vertical-align: middle;
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: inline-flex;
+}
+
+.areaSelectBox {
+  position: relative;
+  width: 100%;
+}
+
+.areaSelectBox + .areaSelectBox {
+  border-left: 1px solid #ccc;
+}
+
+.areaOptionList {
+  top: 100%;
+  left: 0;
+  padding: 8px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+.areaOptionCurrent {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  color: #2c2c2c;
+  font-weight: 600;
+  font-size: 16px;
+  height: 44px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6) url("../images/sub/ico_dropdown.svg") no-repeat top 50% right 20px;
+  backdrop-filter: blur(3px);
+  position: relative;
+  padding: 0 50px 0 20px;
+}
+
+.areaSelectBox:nth-child(1) .areaOptionCurrent {
+  border-radius: 30px 0 0 30px;
+}
+
+.areaSelectBox:nth-child(2) .areaOptionCurrent {
+  border-radius: 0 30px 30px 0;
+}
+
+.areaOption {
+  text-align: left;
+  display: block;
+  width: 100%;
+  height: 41px;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+.areaOption:hover {
+  background-color: #f6f8fa;
+}
+
+.areaOption.active {
+  background-color: #eef2f7;
+  color: #182c77;
+}
+
+.mapSelectWrap {
+  width: 100%;
+}
+
+.mapIco {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.mapIco.back {
+  background: url("../images/sub/ico_back.svg") no-repeat center;
+}
+
+.areaOption.active {
+  background: #eef2f7 url("../images/sub/ico_optionCheck.svg") no-repeat 8px 50%;
+  padding-left: 32px;
+}

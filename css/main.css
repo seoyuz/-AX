@@ -1,204 +1,208 @@
 .contents {
-  padding: 40px 0 64px;
+    padding: 40px 0 64px;
 }
 
 .searchWrap {
-  width: 952px;
-  margin: 0 auto;
+    width: 952px;
+    margin: 0 auto;
 }
 
 .inputBox {
-  position: relative;
+    position: relative;
 }
 
 .srchInpIcon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-input[type=text].mainSearch {
-  width: 100%;
-  height: 52px;
-  padding-left: 74px;
-  padding-right: 56px;
-  border: 1px solid #0B50D0;
-  border-radius: 10px;
-  box-sizing: border-box;
-  font-size: 17px;
+input[type="text"].mainSearch {
+    width: 100%;
+    height: 52px;
+    padding-left: 74px;
+    padding-right: 56px;
+    border: 1px solid #0b50d0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
 }
 
 .keywordBox {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 
 .mainSearchBtn {
-  position: absolute;
-  top: 50%;
-  right: 16px;
-  width: 32px;
-  height: 32px;
-  transform: translateY(-50%);
-  background: url(/images/common/ico_srch-b.png) center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    transform: translateY(-50%);
+    background: url(/images/common/ico_srch-b.png) center no-repeat;
 }
 
 .keywordText {
-  display: inline-block;
-  font-size: 17px;
-  font-weight: 700;
-  color: #1E2124;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1e2124;
 }
 
 .keywordList {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-left: 16px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-left: 16px;
 }
 
 .keywordLink {
-  display: block;
-  padding: 8px 20px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  font-size: 14px;
-  color: #1E2124;
-  border: 1px dashed #633AC3;
-  border-radius: 40px;
-  font-size: 14px;
+    display: block;
+    padding: 8px 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #1e2124;
+    border: 1px dashed #633ac3;
+    border-radius: 40px;
+    font-size: 14px;
 }
 
 .visual {
-  margin: 0 auto;
-  width: 480px;
-  height: 210px;
+    margin: 0 auto;
+    width: 480px;
+    height: 210px;
 }
 
 .visualWrap {
-  display: block;
-  margin: 64px auto;
-  text-align: center;
+    display: block;
+    margin: 64px auto;
+    text-align: center;
 }
 
 .mainVisual {
-  display: inline-block;
-  margin: 0 auto;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .visualText {
-  margin-top: 20px;
-  font-size: 36px;
-  line-height: 150%;
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 150%;
 }
 
 .visualBold {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .visualNum {
-  font-size: 64px;
-  font-weight: 100;
-  color: #345AE4;
+    font-size: 64px;
+    font-weight: 100;
+    color: #345ae4;
 }
 
 .wasteList {
-  display: flex;
-  gap: 24px;
-  margin-top: 40px;
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
 }
 
 .wasteItem {
-  width: 100%;
-  border-radius: 20px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .wasteLink {
-  position: relative;
-  display: block;
-  padding: 20px;
-  height: 380px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 4px 0px #345AE4;
-  background-position: right 20px bottom 20px;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  border: 2px solid transparent;
-  transition: 0.3s ease;
+    position: relative;
+    display: block;
+    padding: 20px;
+    height: 380px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 0px #345ae4;
+    background-position: right 20px bottom 20px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
 }
 .wasteLink.bulky {
-  background-color: #F2FBFF;
-  background-image: url(/images/main/img_waste01.png);
+    background-color: #f2fbff;
+    background-image: url(/images/main/img_waste01.png);
 }
 .wasteLink.domestic {
-  background-color: #FAFFF4;
-  background-image: url(/images/main/img_waste02.png);
+    background-color: #fafff4;
+    background-image: url(/images/main/img_waste02.png);
 }
 .wasteLink.industrial {
-  background-color: #FFFBF8;
-  background-image: url(/images/main/img_waste03.png);
+    background-color: #fffbf8;
+    background-image: url(/images/main/img_waste03.png);
 }
 
 .wasteText {
-  font-size: 24px;
-  font-weight: 700;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .wasteDesc {
-  margin-top: 8px;
-  font-size: 17px;
-  color: #585858;
-  line-height: 150%;
+    margin-top: 8px;
+    font-size: 17px;
+    color: #585858;
+    line-height: 150%;
 }
 
 .viewMore {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: #FFFFFF;
-  border: 1px solid #345AE4;
-  border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #345ae4;
+    border-radius: 50%;
 }
 .viewMoreIcon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .viewMoreIcon.arrow {
-  background-image: url(/images/main/ico_arrow-b.png);
-  transition: opacity 0.25s, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
-  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    background-image: url(/images/main/ico_arrow-b.png);
+    transition:
+        opacity 0.25s,
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
 }
 .viewMoreIcon.plus {
-  background-image: url(/images/main/ico_plus-w.png);
-  transition: opacity 0.25s, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(90deg) scale(0.3);
+    background-image: url(/images/main/ico_plus-w.png);
+    transition:
+        opacity 0.25s,
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.3);
 }
 
 .wasteLink:hover {
-  border: 2px solid #345AE4;
-  box-shadow: none;
+    border: 2px solid #345ae4;
+    box-shadow: none;
 }
 
 .wasteLink:hover .viewMore {
-  background-color: #345AE4;
+    background-color: #345ae4;
 }
 
 .wasteLink:hover .viewMoreIcon.arrow {
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(-90deg) scale(0.3);
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-90deg) scale(0.3);
 }
 
 .wasteLink:hover .viewMoreIcon.plus {
-  opacity: 1;
-  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
 }
