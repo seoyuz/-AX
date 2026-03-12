@@ -28,7 +28,7 @@
   padding-bottom: 20px;
   font-size: 20px;
   font-weight: 700;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 .depth1Item.active .depth2 {
   display: block;
@@ -77,8 +77,8 @@
   padding: 16px 10px;
   width: 100%;
   text-align: center;
-  background-color: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
   border-radius: 10px;
   z-index: 1;
   display: none;
@@ -87,7 +87,7 @@
   display: block;
   font-size: 18px;
   font-weight: 500;
-  color: #3B3B3B;
+  color: #3b3b3b;
   text-align: left;
 }
 .depth2Item + .depth2Item {
@@ -116,19 +116,24 @@ dotlottie-wc {
   bottom: 60px;
   width: 40px;
   height: 40px;
-  background: #F5F5F5 url(/images/common/ico_arrow.png) center no-repeat;
+  background: #f5f5f5 url(/images/common/ico_arrow.png) center no-repeat;
   border-radius: 50%;
   transition: 0.2s ease;
 }
 .topButton:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
+}
+
+.contents {
+  padding: 40px 0 64px;
+  min-height: 600px;
 }
 
 .footer {
   padding: 40px 0 24px;
-  background: #F5F5F5;
-  border-top: 1px solid #DDDDDD;
-  color: #3B3B3B;
+  background: #f5f5f5;
+  border-top: 1px solid #dddddd;
+  color: #3b3b3b;
 }
 
 .descWrap {
@@ -159,7 +164,7 @@ dotlottie-wc {
   display: inline-block;
   width: 1px;
   height: 20px;
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
   margin: -3px 10px 0;
   vertical-align: middle;
 }
@@ -171,7 +176,7 @@ dotlottie-wc {
 .copyrightWrap {
   padding-top: 16px;
   margin-top: 40px;
-  border-top: 1px solid #CDD1D5;
+  border-top: 1px solid #cdd1d5;
 }
 
 .copyright {
