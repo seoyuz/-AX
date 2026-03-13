@@ -9,6 +9,7 @@
 .chatbotFrame {
     max-width: 708px;
     min-width: 400px;
+    width: 100%;
     display: inline-block;
 }
 .mapFrame {
@@ -300,6 +301,35 @@ button {
 }
 .inputBox {
     margin-top: 26px;
+    position: relative;
+}
+.srchInpIcon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+input[type="text"].mainSearch {
+    width: 100%;
+    height: 52px;
+    padding-left: 74px;
+    padding-right: 56px;
+    border: 1px solid #0b50d0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+.keywordBox {
+    margin-top: 16px;
+}
+.mainSearchBtn {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    transform: translateY(-50%);
+    background: url(/images/common/ico_srch-b.png) center no-repeat;
 }
 
 .chatbotWrap::-webkit-scrollbar {
