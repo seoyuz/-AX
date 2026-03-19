@@ -1,0 +1,120 @@
+.accordionWrap {
+  margin-top: 20px;
+}
+
+.listControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listInfo {
+  font-size: 20px;
+  font-weight: 600;
+}
+.listSearch {
+  display: flex;
+  gap: 10px;
+}
+
+.value {
+  color: #345AE4;
+}
+
+input[type=text].searchInput {
+  width: 220px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #585858;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.searchFilter {
+  height: 40px;
+  border-color: #585858;
+  border-radius: 6px;
+  background-image: url("../images/sub/ico_select.svg");
+}
+.searchBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px;
+  height: 40px;
+  font-size: 15px;
+  background-color: #345AE4;
+  color: #FFFFFF;
+  border-radius: 6px;
+}
+.searchIcon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/sub/ico_search.svg") center no-repeat;
+}
+
+.accordion {
+  border-bottom: 1px solid #DDDDDD;
+}
+.accordion:last-child {
+  border-bottom: 0;
+}
+.accordionList {
+  margin-top: 20px;
+  border-top: 1px solid #2C2C2C;
+  border-bottom: 1px solid #2C2C2C;
+}
+.accordionQuestion {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 400;
+  transition: 0.2s ease;
+}
+.accordionQuestion:hover {
+  background-color: #F8FAFE;
+}
+.accordionQuestion.active {
+  background-color: #F8FAFE;
+}
+.accordionQuestion.active .question {
+  font-weight: 600;
+}
+.accordionQuestion.active::after {
+  transform: rotate(180deg);
+}
+.accordionQuestion.active + .accordionAnswer {
+  display: block;
+}
+.accordionQuestion::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../images/sub/ico_accordion.svg") center no-repeat;
+  transition: 0.3s ease;
+}
+.accordionCate {
+  display: inline-block;
+  padding: 0px 20px;
+  width: 60px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  border-right: 1px solid #DDDDDD;
+  box-sizing: border-box;
+}
+.accordionAnswer {
+  display: none;
+  padding: 20px 80px;
+  border-top: 1px solid #EEEEEE;
+}
+
+.question {
+  padding: 0 20px;
+}

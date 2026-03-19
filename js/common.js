@@ -30,14 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 맨 위로
+    // 맨 위 바로가기
     const topBtn = document.querySelector(".topButton");
-    topBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+    if( topBtn ) {
+        topBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
-    });
+    }
 
     
 });

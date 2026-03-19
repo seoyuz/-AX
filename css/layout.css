@@ -126,7 +126,12 @@ dotlottie-wc {
 
 .contents {
   padding: 40px 0 64px;
-  min-height: 600px;
+  min-height: calc(100vh - 122px - 192px);
+}
+
+.pageTitle {
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .footer {
