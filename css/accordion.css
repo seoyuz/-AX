@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .accordionWrap {
   margin-top: 20px;
 }
@@ -117,4 +118,20 @@ input[type=text].searchInput {
 
 .question {
   padding: 0 20px;
+}
+
+/* 검색결과 없음 */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  min-height: 554px;
+  border-top: 1px solid #2C2C2C;
+  border-bottom: 1px solid #2C2C2C;
+}
+.emptyStateTitle {
+  font-weight: 600;
 }
