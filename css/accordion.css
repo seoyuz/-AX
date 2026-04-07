@@ -69,8 +69,9 @@ input[type=text].searchInput {
 .accordionQuestion {
   display: inline-flex;
   align-items: center;
+  padding: 13px 50px 13px 0;
   width: 100%;
-  height: 48px;
+  min-height: 48px;
   font-size: 17px;
   font-weight: 400;
   transition: 0.2s ease;
@@ -110,6 +111,30 @@ input[type=text].searchInput {
   border-right: 1px solid #DDDDDD;
   box-sizing: border-box;
 }
+.accordionTag {
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 0 20px;
+  min-width: 40px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+.accordionTag.blue {
+  border: 1px solid #0B50D0;
+  color: #0B50D0;
+}
+.accordionTag.red {
+  border: 1px solid #D63D4A;
+  color: #D63D4A;
+}
+.accordionTag.green {
+  border: 1px solid #228738;
+  color: #228738;
+}
 .accordionAnswer {
   display: none;
   padding: 20px 80px;
@@ -118,6 +143,7 @@ input[type=text].searchInput {
 
 .question {
   padding: 0 20px;
+  border-left: 1px solid #DDDDDD;
 }
 
 /* 검색결과 없음 */

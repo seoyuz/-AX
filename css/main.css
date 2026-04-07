@@ -1,5 +1,10 @@
+.inner {
+  max-width: 1460px;
+}
+
 .searchWrap {
-  width: 952px;
+  max-width: 952px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -41,6 +46,7 @@ input[type=text].mainSearch {
 
 .keywordText {
   display: inline-block;
+  margin-right: 16px;
   font-size: 17px;
   font-weight: 700;
   color: #1e2124;
@@ -50,7 +56,6 @@ input[type=text].mainSearch {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin-left: 16px;
 }
 
 .keywordLink {
@@ -100,12 +105,13 @@ input[type=text].mainSearch {
 
 .wasteList {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
-  margin-top: 40px;
 }
 
 .wasteItem {
   width: 100%;
+  max-width: calc(33.3333333333% - 16px);
   border-radius: 20px;
 }
 
@@ -113,31 +119,29 @@ input[type=text].mainSearch {
   position: relative;
   display: block;
   padding: 20px;
-  height: 380px;
+  height: 100%;
   border-radius: 20px;
-  box-shadow: 0px 0px 4px 0px #345ae4;
-  background-position: right 20px bottom 20px;
-  background-repeat: no-repeat;
+  background: #F5F5F5;
+  border: 1px solid transparent;
   box-sizing: border-box;
-  border: 2px solid transparent;
   transition: 0.3s ease;
+  text-align: center;
 }
-.wasteLink.bulky {
-  background-color: #f2fbff;
-  background-image: url(/images/main/img_waste01.png);
-}
-.wasteLink.domestic {
-  background-color: #fafff4;
-  background-image: url(/images/main/img_waste02.png);
-}
-.wasteLink.industrial {
-  background-color: #fffbf8;
-  background-image: url(/images/main/img_waste03.png);
+.wasteLink:hover {
+  box-shadow: 0px 0px 4px 0px #787878;
 }
 
-.wasteText {
+.wasteInfo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wasteTitle {
   font-size: 24px;
   font-weight: 700;
+  transition: 0.3s ease;
 }
 
 .wasteDesc {
@@ -148,13 +152,12 @@ input[type=text].mainSearch {
 }
 
 .viewMore {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+  display: block;
+  position: relative;
   width: 40px;
   height: 40px;
   background-color: #ffffff;
-  border: 1px solid #345ae4;
+  border: 1px solid #3B3B3B;
   border-radius: 50%;
 }
 .viewMoreIcon {
@@ -168,7 +171,7 @@ input[type=text].mainSearch {
   background-position: center;
 }
 .viewMoreIcon.arrow {
-  background-image: url(/images/main/ico_arrow-b.png);
+  background-image: url(/images/main/ico_shortcut.svg);
   transition: opacity 0.25s, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   transform: translate(-50%, -50%) rotate(0deg) scale(1);
@@ -180,13 +183,51 @@ input[type=text].mainSearch {
   transform: translate(-50%, -50%) rotate(90deg) scale(0.3);
 }
 
-.wasteLink:hover {
-  border: 2px solid #345ae4;
-  box-shadow: none;
+.wasteLink.bulky:hover {
+  background-color: #F2FBFF;
+  border-color: #1672B1;
+}
+.wasteLink.bulky:hover .wasteTitle {
+  color: #1672B1;
+}
+.wasteLink.household:hover {
+  background-color: #FAFFF4;
+  border-color: #27770B;
+}
+.wasteLink.household:hover .wasteTitle {
+  color: #27770B;
+}
+.wasteLink.commercial:hover {
+  background-color: #FFFBF8;
+  border-color: #B15900;
+}
+.wasteLink.commercial:hover .wasteTitle {
+  color: #B15900;
+}
+.wasteLink.industrial:hover {
+  background-color: #F6F2FF;
+  border-color: #310F80;
+}
+.wasteLink.industrial:hover .wasteTitle {
+  color: #310F80;
+}
+.wasteLink.construction:hover {
+  background-color: #FFF6F0;
+  border-color: #6E513E;
+}
+.wasteLink.construction:hover .wasteTitle {
+  color: #6E513E;
+}
+.wasteLink.hazardous:hover {
+  background-color: #EEEEEE;
+  border-color: #2C2C2C;
+}
+.wasteLink.hazardous:hover .wasteTitle {
+  color: #2C2C2C;
 }
 
 .wasteLink:hover .viewMore {
-  background-color: #345ae4;
+  background-color: #3B3B3B;
 }
 
 .wasteLink:hover .viewMoreIcon.arrow {
