@@ -1,0 +1,425 @@
+@charset "UTF-8";
+
+// 상단 대분류 s
+.typeIconWrap { margin: 40px 0;}
+.wasteList {
+  display: flex;
+  gap: 24px;
+}
+
+.wasteItem {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.wasteLink {
+  position: relative;
+  display: block;
+  padding: 20px;
+  height: 100%;
+  border-radius: 20px;
+  background: #F5F5F5;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  text-align: center;
+}
+.wasteLink:hover {
+  box-shadow: 0px 0px 4px 0px #787878;
+}
+
+.wasteInfo {
+  margin-top: 10px;
+}
+
+.wasteTitle {
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.wasteDesc {
+  margin-top: 8px;
+  font-size: 17px;
+  color: #585858;
+  line-height: 150%;
+}
+
+.viewMore {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #3B3B3B;
+  border-radius: 50%;
+}
+.viewMoreIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.viewMoreIcon.arrow {
+  background-image: url(/images/main/ico_shortcut.svg);
+  transition: opacity 0.25s, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+.viewMoreIcon.plus {
+  background-image: url(/images/main/ico_plus-w.png);
+  transition: opacity 0.25s, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg) scale(0.3);
+}
+
+.wasteLink img {height: 80px;}
+
+.wasteLink.bulky:hover, .wasteLink.bulky.active {
+  background-color: #F2FBFF;
+  border-color: #1672B1;
+}
+.wasteLink.bulky:hover .wasteTitle, .wasteLink.bulky.active .wasteTitle {
+  color: #1672B1;
+}
+.wasteLink.household:hover, .wasteLink.household.active {
+  background-color: #FAFFF4;
+  border-color: #27770B;
+}
+.wasteLink.household:hover .wasteTitle, .wasteLink.household.active .wasteTitle {
+  color: #27770B;
+}
+.wasteLink.commercial:hover, .wasteLink.commercial.active {
+  background-color: #FFFBF8;
+  border-color: #B15900;
+}
+.wasteLink.commercial:hover .wasteTitle, .wasteLink.commercial.active .wasteTitle {
+  color: #B15900;
+}
+.wasteLink.industrial:hover, .wasteLink.industrial.active {
+  background-color: #F6F2FF;
+  border-color: #310F80;
+}
+.wasteLink.industrial:hover .wasteTitle, .wasteLink.industrial.active .wasteTitle {
+  color: #310F80;
+}
+.wasteLink.construction:hover, .wasteLink.construction.active {
+  background-color: #FFF6F0;
+  border-color: #6E513E;
+}
+.wasteLink.construction:hover .wasteTitle, .wasteLink.construction.active .wasteTitle {
+  color: #6E513E;
+}
+.wasteLink.hazardous:hover, .wasteLink.hazardous.active {
+  background-color: #EEEEEE;
+  border-color: #2C2C2C;
+}
+.wasteLink.hazardous:hover .wasteTitle, .wasteLink.hazardous.active .wasteTitle {
+  color: #2C2C2C;
+}
+
+.wasteLink:hover .viewMore, .wasteLink.active .viewMore {
+  background-color: #3B3B3B;
+}
+
+.wasteLink:hover .viewMoreIcon.arrow {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0.3);
+}
+
+.wasteLink:hover .viewMoreIcon.plus {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+.typeText {
+    margin-top: 24px;
+    text-align: center;
+}
+.typeTextDesc {
+  font-size: 24px;
+  color: #2C2C2C;
+  display: inline-block;
+  border: 1px dashed #aaa;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color:#F5F5F5;
+}
+// e
+
+
+// 중분류 s
+.categoryWrap {
+    position: relative;
+    padding: 0 65px 40px;
+}
+.categorySlider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.categorySlideList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    /* width: 300%; */
+} 
+
+.categorySlider .slideItem {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  padding: 2px;
+}
+
+.categorySlider .item {
+  width: 100%;
+  text-align: center;
+}
+
+.categorySlider .itemBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categorySlider .itemImg {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #D9D9D9; 
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.categorySlider .itemBtn:hover .itemImg {
+    background-color: #f9f9f9;
+    box-shadow: 0px 0 4px 0px rgba(120, 120, 120, 1);
+}
+.categorySlider .itemBtn.active .itemImg {
+    background-color: #fff;
+    border: 1px solid #787878;
+    box-shadow: 0px 0 4px 0px rgba(120, 120, 120, 1);
+
+}
+
+.categorySlider .itemImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 텍스트 스타일 */
+.categorySlider .itemText {
+  font-size: 17px;
+  font-weight: 500;
+  color: #2C2C2C;
+}
+
+/* --- 화살표 및 페이지네이션 제어 --- */
+
+.categoryWrap .swiper-button-lock,
+.categoryWrap .swiper-pagination-lock {
+  display: none !important;
+}   
+
+/* 좌우 화살표 위치 및 디자인 */
+.categoryWrap .slidePrevBtn,
+.categoryWrap .slideNextBtn {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  border: 1px solid #CDD1D5;
+  border-radius: 50%;
+  color: #333;
+  top: 30px;
+  text-indent: -99999px;
+}
+
+.categoryWrap .slidePrevBtn:after,
+.categoryWrap .slideNextBtn:after {
+  content: '';
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+.categoryWrap .slidePrevBtn{
+    left: 0;
+    background: url("../../images/sub/ico_prev.svg") no-repeat center;
+}
+.categoryWrap .slideNextBtn{
+    right: 0;
+    background: url("../../images/sub/ico_next.svg") no-repeat center;
+}
+
+/* 하단 페이지네이션 (점) 디자인 */
+.categoryWrap .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.categoryWrap .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #aaa;
+  opacity: 1;
+}
+
+.categoryWrap .swiper-pagination-bullet-active {
+  background: #3f51b5; 
+  width: 20px;
+  border-radius: 4px;
+}
+
+/* 12개 이하 */
+.categorySlider.is-disabled .categorySlideList {
+    display: flex !important;
+    justify-content: center !important;
+    transform: none !important;
+    width: 100% !important;
+    gap: 10px;
+}
+
+.categorySlider.is-disabled .slideItem {
+    flex: 0 0 auto !important; 
+    width: calc((100% - 110px) / 12) !important; 
+    max-width: 120px;
+}
+
+/* 컨트롤러 강제 숨김 */
+.categorySlider.is-disabled .slideNextBtn,
+.categorySlider.is-disabled .slidePrevBtn,
+.categorySlider.is-disabled .visual-pagination {
+    display: none !important;
+}
+
+
+.slidePaginationWrap {
+    text-align: center;
+    margin-top: 16px;
+}
+.slidePagination {
+    display: inline-block;
+    background-color: #F5F5F5;
+    border-radius: 100px;
+    padding: 8px 12px;
+    font-size: 0;
+}
+.slidePagination li {
+    display: inline-block;
+    font-size: 14px;
+}
+.slidePagination .slideBullet {
+    display: inline-block;
+    text-indent: -99999px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+}
+.slidePagination .slideBullet::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    display: inline-block;
+    text-indent: -99999px;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    padding: 0;
+    background-color: #6D7882;
+}
+
+
+.slidePagination .slideBullet.active {width: 25px;}
+.slidePagination .slideBullet.active::before {
+    background-color: #345AE4;
+    width: 20px;
+}
+
+
+// 품목분류 s
+.categorySearchWrap {  
+    margin-top: 40px;
+    border: 1px solid #E4E4E4;
+    border-radius: 20px;
+    padding: 20px;
+}
+.breadcrumbLabel { 
+    font-size: 14px;
+    color: #1E2124;
+    font-weight: 600;
+}
+.breadcrumbPath {
+    font-size: 12px;
+    color: #1E2124;
+}
+.searchInputWrapper { 
+    margin-top: 16px;
+    width: 100%;
+
+}
+.searchInputWrapper .searchInput {
+    width: 100%;
+    cursor: pointer;
+    padding: 12px 16px 12px 40px;
+    border: 1px solid #999;
+    font-size: 14px;
+    height: 42px;
+    background: url("../images/common/ico_srch.svg") no-repeat 10px center;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.searchItemList { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 16px; }
+.searchItem {
+    width: calc(100% / 6 - 14px);
+}
+.searchItemBtn {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    text-align: left;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    transition: .3s ease;
+    border: 1px solid #EEE;
+    border-radius:8px;
+}
+.searchItemBtn:hover {
+    border: 1px solid #ccc;
+}
+
+.searchItem .itemImage {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background-color: #fff;
+}
+// e

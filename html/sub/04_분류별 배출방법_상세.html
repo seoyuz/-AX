@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>내 손안의 AI 폐기물 처리 도우미</title>
+        <link rel="stylesheet" href="/css/forms.css">
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/mixins.css">
+        <link rel="stylesheet" href="/css/vars.css">
+        <link rel="stylesheet" href="/css/layout.css">
+        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js" type="module"></script>
+        <script src="/js/common.js"></script>
+
+        
+        <link rel="stylesheet" href="/css/search-detail.css"> <!-- 분류별 배출방법 상세 -->
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="headerInner">
+                <h1 class="logo"><a href="#none" class="logoLink"><img src="/images/common/logo.svg" alt="내 손안의 AI 폐기물 처리 도우미 로고 이미지"></a></h1>
+                <nav class="lnb">
+                    <ul class="depth1">
+                        <li class="depth1Item">
+                            <a href="#none" class="depth1Link"><i class="depth1Icon faq"></i>FAQ</a>
+                        </li>
+                        <li class="depth1Item">
+                            <a href="#none" class="depth1Link"><i class="depth1Icon bell"></i>알림</a>
+                        </li>
+                        <li class="depth1Item">
+                            <a href="#none" class="depth1Toggle"><i class="depth1Icon download"></i>앱 다운로드</a>
+                            <ul class="depth2">
+                                <li class="depth2Item">
+                                    <a href="#none" class="depth2Link lottie">
+                                        <dotlottie-wc src="https://lottie.host/14be99b3-d217-42f4-b556-d7274397c5de/sQJT0FR4ST.lottie" style="width: 160px; height: auto;" autoplay ></dotlottie-wc>
+                                    </a>
+                                </li>
+                                <li class="depth2Item">
+                                    <a href="#none" class="depth2Link lottie"><dotlottie-wc src="https://lottie.host/539b663c-ca86-43b3-a45d-e9c97accc192/FqbNUYZcpl.lottie" style="width: auto; height: auto;" autoplay ></dotlottie-wc></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="inner">
+                <h2 class="pageTitle">분류별 배출 방법</h2>
+                <div class="typeIconWrap">
+                    <!-- 메인과 동일 -->
+                    <ul class="wasteList">
+                        <li class="wasteItem"><a href="#none" class="wasteLink bulky">
+                            <img src="../../images/main/img_waste01.png" alt="">
+                            <div class="wasteInfo">
+                                <p class="wasteTitle">대형폐기물</p>
+                            </div>
+                        </a></li>
+                        <li class="wasteItem"><a href="#none" class="wasteLink household active" title="선택됨">
+                            <img src="../../images/main/img_waste02.png" alt="">
+                            <div class="wasteInfo">
+                                <p class="wasteTitle">생활폐기물</p>
+                            </div>
+                        </a></li>
+                        <li class="wasteItem">
+                            <a href="#none" class="wasteLink commercial">
+                                <img src="../../images/main/img_waste03.png" alt="">
+                                <div class="wasteInfo">
+                                    <p class="wasteTitle">사업장폐기물(생활계)</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wasteItem"><a href="#none" class="wasteLink industrial">
+                            <img src="../../images/main/img_waste04.png" alt="">
+                            <div class="wasteInfo">
+                                <p class="wasteTitle">사업장폐기물(시설계)</p>
+                            </div>
+                        </a></li>
+                        <li class="wasteItem"><a href="#none" class="wasteLink construction">
+                            <img src="../../images/main/img_waste05.png" alt="">
+                            <div class="wasteInfo">
+                                <p class="wasteTitle">건설폐기물</p>
+                            </div>
+                        </a></li>
+                        <li class="wasteItem">
+                            <a href="#none" class="wasteLink hazardous">
+                                <img src="../../images/main/img_waste06.png" alt="">
+                                <div class="wasteInfo">
+                                    <p class="wasteTitle">지정폐기물</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="typeText">
+                        <p class="typeTextDesc">“개별적으로 계량을 할 수 있고 품명을 알아볼 수 있는 폐기물”</p>
+                    </div>
+                </div>
+
+                <!-- 중분류 아이콘 슬라이드  -->
+                <div class="categoryWrap">
+                    <button type="button" class="slidePrevBtn">이전 슬라이드로 이동</button>
+                    <div class="categorySlider">
+                        <div class="categorySlideList">
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/noimg.png" alt=""></div>
+                                        <span class="itemText">가구류</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category01.png" alt=""></div>
+                                        <span class="itemText">가구류</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn active" title="선택됨">
+                                        <div class="itemImg"><img src="../../images/sub/img_category02.png" alt=""></div>
+                                        <span class="itemText">가전제품류</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category03.png" alt=""></div>
+                                        <span class="itemText">생활용품류</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category04.png" alt=""></div>
+                                        <span class="itemText">기타</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category05.png" alt=""></div>
+                                        <span class="itemText">일반쓰레기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category06.png" alt=""></div>
+                                        <span class="itemText">음식물쓰레기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category07.png" alt=""></div>
+                                        <span class="itemText">재활용품</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category08.png" alt=""></div>
+                                        <span class="itemText">지정배출</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category09.png" alt=""></div>
+                                        <span class="itemText">생활계 유해 폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category10.png" alt=""></div>
+                                        <span class="itemText">사무, 업무 생활폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category11.png" alt=""></div>
+                                        <span class="itemText">음식물류 폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category12.png" alt=""></div>
+                                        <span class="itemText">판매, 소비활동 폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category13.png" alt=""></div>
+                                        <span class="itemText">위생 소모성 폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category14.png" alt=""></div>
+                                        <span class="itemText">생활계 대형폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category15.png" alt=""></div>
+                                        <span class="itemText">재활용 폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category16.png" alt=""></div>
+                                        <span class="itemText">제조·공정계</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category17.png" alt=""></div>
+                                        <span class="itemText">건설·시설계</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category18.png" alt=""></div>
+                                        <span class="itemText">물류·유통계</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category19.png" alt=""></div>
+                                        <span class="itemText">건설폐재류</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category20.png" alt=""></div>
+                                        <span class="itemText">건설혼합폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category21.png" alt=""></div>
+                                        <span class="itemText">건설오니</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category22.png" alt=""></div>
+                                        <span class="itemText">특정시설에서발생</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category23.png" alt=""></div>
+                                        <span class="itemText">부식성폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category24.png" alt=""></div>
+                                        <span class="itemText">유해물질함유 폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category25.png" alt=""></div>
+                                        <span class="itemText">폐유기용제</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category26.png" alt=""></div>
+                                        <span class="itemText">폐페인트 및 폐래커</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category27.png" alt=""></div>
+                                        <span class="itemText">폐유</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category28.png" alt=""></div>
+                                        <span class="itemText">폐석면</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category29.png" alt=""></div>
+                                        <span class="itemText">폴리클로리네이티드비페닐 함유 폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category30.png" alt=""></div>
+                                        <span class="itemText">폐유독물질</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category31.png" alt=""></div>
+                                        <span class="itemText">의료폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category32.png" alt=""></div>
+                                        <span class="itemText">수은폐기물</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slideItem">
+                                <div class="item">
+                                    <button type="button" class="itemBtn">
+                                        <div class="itemImg"><img src="../../images/sub/img_category33.png" alt=""></div>
+                                        <span class="itemText">기타</span>
+                                    </button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <button type="button" class="slideNextBtn">다음 슬라이드로 이동</button>
+                    <div class="slidePaginationWrap">
+                        <ul class="slidePagination">
+                            <li><button type="button" class="slideBullet active" title="선택됨">슬라이드 1page</button></li>
+                            <li><button type="button" class="slideBullet">슬라이드 2page</button></li>
+                            <li><button type="button" class="slideBullet">슬라이드 3page</button></li>
+                            <li><button type="button" class="slideBullet">슬라이드 4page</button></li>
+                            <li><button type="button" class="slideBullet">슬라이드 5page</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categorySearchWrap">
+                    <nav class="categoryBreadcrumb">
+                        <span class="breadcrumbLabel">품목 분류 : </span>
+                        <span class="breadcrumbPath">대형폐기물 &gt; 일반쓰레기</span>
+                    </nav>
+
+                    <div class="searchInputWrapper">
+                      <input type="text" class="searchInput" placeholder="세부 품목명으로 검색" />
+                    <!-- <button type="button" class="searchIconBtn">검색</button> -->
+                    </div>
+
+                    <div class="searchItemList">
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate01.png" alt="화장대" class="itemImage" />
+                                <span class="itemName">화장대</span>
+                            </button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate02.png" alt="책상" class="itemImage" />
+                                <span class="itemName">책상</span>
+                            </button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate03.png" alt="의자" class="itemImage" />
+                                <span class="itemName">의자</span>
+                            </button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate04.png" alt="대형폐기물" class="itemImage" />
+                                <span class="itemName">대형폐기물</span>
+                            </button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate05.png" alt="식탁" class="itemImage" />
+                                <span class="itemName">식탁</span>
+                            </button>
+                        </div>
+
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate01.png" alt="화장대" class="itemImage" />
+                                <span class="itemName">화장대</span>
+                            </button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate02.png" alt="책상" class="itemImage" />
+                                <span class="itemName">책상</span>
+                            </button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate03.png" alt="의자" class="itemImage" />
+                                <span class="itemName">의자</span>
+                            </button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate04.png" alt="대형폐기물" class="itemImage" />
+                                <span class="itemName">대형폐기물</span>
+                            </button>
+                        </div>
+                        <div class="searchItem">
+                            <button type="button" class="searchItemBtn">
+                                <img src="../../images/sub/img_cate05.png" alt="식탁" class="itemImage" />
+                                <span class="itemName">식탁</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <button type="button" class="topButton"></button>
+        </div>
+        <footer class="footer">
+            <div class="inner">
+                <div class="descWrap">
+                    <div class="footerLeft">
+                        <div class="footerLogo">
+                            <img src="/images/common/footer-logo.png" alt="" />
+                        </div>
+                        <ul class="addressList">
+                            <li class="adressItem">22689 인천시 서구 환경로 42(오류동 종합환경연구단지)</li>
+                            <li class="adressItem">대표전화 <span class="adressCall">1644-0007</span></li>
+                        </ul>
+                    </div>
+                    <div class="keco">
+                        <img src="/images/common/ico_keco.png" alt="" />
+                    </div>
+                </div>
+                <div class="copyrightWrap">
+                    <p class="copyright">Copyright 2026 ○ ○ ○ ○. All rightreserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
