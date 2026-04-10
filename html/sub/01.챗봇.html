@@ -195,77 +195,162 @@
                                 <!--  // 지도영역 -->
                                 <div class="mapSearchWrap">
                                     <div class="mapLeftArea">
-                                        <div class="mapSearchBox">
-                                            <input type="text" class="mapSearchInput" placeholder="지역명 또는 업체명을 입력하세요." />
-                                            <button type="button" class="mapSearchBtn"><i class="ico search"></i></button>
-                                        </div>
-                                        <div class="backBtnBox">
-                                            <button type="button" class="backbtn"><span class="blind">뒤로가기</span><i class="mapIco back"></i></button>
-                                            <p class="currentAddress">구로구 디지털로 33길 27</p>
-                                        </div>
-                                        <div class="areaSelectBoxWrap">
-                                            <div class="areaSelectBox">
-                                                <button type="button" class="areaOptionCurrent">서울특별시</button>
-                                                <div class="areaOptionList">
-                                                    <button type="button" class="areaOption">서울특별시</button>
-                                                    <button type="button" class="areaOption active" title="선택됨">부산광역시</button>
-                                                    <button type="button" class="areaOption">대구광역시</button>
-                                                    <button type="button" class="areaOption">인천광역시</button>
-                                                    <button type="button" class="areaOption">광주광역시</button>
-                                                    <button type="button" class="areaOption">대전광역시</button>
-                                                    <button type="button" class="areaOption">울산광역시</button>
-                                                    <button type="button" class="areaOption">세종특별자치시</button>
-                                                    <button type="button" class="areaOption">경기도</button>
-                                                    <button type="button" class="areaOption">강원도</button>
-                                                    <button type="button" class="areaOption">충청북도</button>
-                                                    <button type="button" class="areaOption">충청남도</button>
-                                                    <button type="button" class="areaOption">전라북도</button>
-                                                    <button type="button" class="areaOption">전라남도</button>
-                                                    <button type="button" class="areaOption">경상북도</button>
-                                                    <button type="button" class="areaOption">경상남도</button>
-                                                    <button type="button" class="areaOption">제주특별자치도</button>
+                                        <div class="mapControlArea">
+                                            <div class="mapSearchBox">
+                                                <input type="text" class="mapSearchInput" placeholder="지역명 또는 업체명을 입력하세요." />
+                                                <button type="button" class="mapSearchBtn"><i class="ico search"></i></button>
+                                            </div>
+                                            <div class="areaSelectBoxWrap">
+                                                <div class="areaSelectBox">
+                                                    <button type="button" class="areaOptionCurrent">서울특별시</button>
+                                                    <div class="areaOptionList">
+                                                        <button type="button" class="areaOption">서울특별시</button>
+                                                        <button type="button" class="areaOption active" title="선택됨">부산광역시</button>
+                                                        <button type="button" class="areaOption">대구광역시</button>
+                                                        <button type="button" class="areaOption">인천광역시</button>
+                                                        <button type="button" class="areaOption">광주광역시</button>
+                                                        <button type="button" class="areaOption">대전광역시</button>
+                                                        <button type="button" class="areaOption">울산광역시</button>
+                                                        <button type="button" class="areaOption">세종특별자치시</button>
+                                                        <button type="button" class="areaOption">경기도</button>
+                                                        <button type="button" class="areaOption">강원도</button>
+                                                        <button type="button" class="areaOption">충청북도</button>
+                                                        <button type="button" class="areaOption">충청남도</button>
+                                                        <button type="button" class="areaOption">전라북도</button>
+                                                        <button type="button" class="areaOption">전라남도</button>
+                                                        <button type="button" class="areaOption">경상북도</button>
+                                                        <button type="button" class="areaOption">경상남도</button>
+                                                        <button type="button" class="areaOption">제주특별자치도</button>
+                                                    </div>
+                                                </div>
+                                                <div class="areaSelectBox">
+                                                    <button type="button" class="areaOptionCurrent">관악구</button>
+                                                    <div class="areaOptionList">
+                                                        <button type="button" class="areaOption">관악구</button>
+                                                        <button type="button" class="areaOption">강남구</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="areaSelectBox">
-                                                <button type="button" class="areaOptionCurrent">관악구</button>
-                                                <div class="areaOptionList">
-                                                    <button type="button" class="areaOption">관악구</button>
-                                                    <button type="button" class="areaOption">강남구</button>
-                                                </div>
-                                            </div>
                                         </div>
-                                        <div class="mapSelectWrap">
-                                            <div class="selectItem active">
-                                                <input type="checkbox" id="select1" name="select1" checked />
-                                                <label for="select1" class="pinType">전체보기</label>
-                                            </div>
-                                            <div class="selectItem">
-                                                <input type="checkbox" id="select2" name="select2" />
-                                                <label for="select2">분리배출장소</label>
-                                            </div>
-                                            <div class="selectItem">
-                                                <input type="checkbox" id="select3" name="select3" />
-                                                <label for="select3">무인회수기</label>
-                                            </div>
-                                            <div class="selectItem">
-                                                <input type="checkbox" id="select4" name="select4" />
-                                                <label for="select4">물품교환처</label>
-                                            </div>
-                                            <div class="selectItem">
-                                                <input type="checkbox" id="select5" name="select5" />
-                                                <label for="select5">폐가전 수거함</label>
-                                            </div>
-                                            <div class="selectItem">
-                                                <input type="checkbox" id="select6" name="select6" />
-                                                <label for="select6">전지 수거함</label>
+                                        <div class="mapResultListWrap">
+                                            <p class="mapResultTitle">장소<span class="mapResultNum">NNNN</span></p>
+                                            <div class="mapResultList">
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle recycle">분리배출장소</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle free
+                                                        freecollect">무인회수기</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle swap">물품교환처</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem active">
+                                                        <p class="itemTitle box">폐가전 수거함</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle battery">전지  수거함</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle lamp">형광등 수거함</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle clothes">의류 수거함</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle oil">폐식용유 수거함</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle etc">기타</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle rfid">음식물 RFID</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
+                                                    <div class="mapResultItem">
+                                                        <p class="itemTitle bag">종량제봉투판매소</p>
+                                                        <p class="itemAddress">서울특별시 영등포구 당산로 83, 지하1층,㈜이마트에브리데이 영등포구청역점</p>
+                                                        <p class="itemDesc">종량제 봉투</p>
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mapRightArea">
-
-                                        
+                                        <div class="mapSelectWrap">
+                                            <button type="button" class="selectButton all active">전체보기</button>
+                                            <button type="button" class="selectButton recycle active">분리배출장소</button>
+                                            <button type="button" class="selectButton freecollect active">무인회수기</button>
+                                            <button type="button" class="selectButton swap active">물품교환처</button>
+                                            <button type="button" class="selectButton box active">폐가전 수거함</button>
+                                            <button type="button" class="selectButton battery active">전지 수거함</button>
+                                            <button type="button" class="selectButton lamp active">형광등 수거함</button>
+                                            <button type="button" class="selectButton clothes active">의류 수거함</button>
+                                            <button type="button" class="selectButton oil active">폐식용유 수거함</button>
+                                            <button type="button" class="selectButton medicine active">폐의약품 수거함</button>
+                                            <button type="button" class="selectButton etc active">기타</button>
+                                            <button type="button" class="selectButton rfid active">음식물 RFID</button>
+                                            <button type="button" class="selectButton bag active">종량제봉투 판매소</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="mapPin recycle">
+                                                <span class="sr-only">분리배출장소</span>
+                                            </button>
+                                            <button type="button" class="mapPin freecollect">
+                                                <span class="sr-only">무인회수기</span>
+                                            </button>
+                                            <button type="button" class="mapPin swap">
+                                                <span class="sr-only">물품교환처</span>
+                                            </button>
+                                            <button type="button" class="mapPin box">
+                                                <span class="sr-only">폐가전 수거함</span>
+                                            </button>
+                                            <button type="button" class="mapPin battery">
+                                                <span class="sr-only">전지 수거함</span>
+                                            </button>
+                                            <button type="button" class="mapPin lamp">
+                                                <span class="sr-only">형광등 수거함</span>
+                                            </button>
+                                            <button type="button" class="mapPin clothes">
+                                                <span class="sr-only">의류 수거함</span>
+                                            </button>
+                                            <button type="button" class="mapPin oil">
+                                                <span class="sr-only">폐식용유 수거함</span>
+                                            </button>
+                                            <button type="button" class="mapPin medicine">
+                                                <span class="sr-only">폐의약품 수거함</span>
+                                            </button>
+                                            <button type="button" class="mapPin etc">
+                                                <span class="sr-only">기타</span>
+                                            </button>
+                                            <button type="button" class="mapPin rfid">
+                                                <span class="sr-only">음식물 RFID</span>
+                                            </button>
+                                            <button type="button" class="mapPin bag">
+                                                <span class="sr-only">종량제봉투 판매소</span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
+                                </div>                                
+                                
                             </div>
                         </div>
                     </div>

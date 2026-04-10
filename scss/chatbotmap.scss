@@ -8,39 +8,56 @@
     height: 100%;
     z-index: -1;
 }
+
+.mapFrame{
+    border-color: #DDDDDD;
+}
 .mapWrap {
-    padding: 20px;
+    display: flex;
 }
 
 .mapSearchWrap {
     display: flex;
-    flex-wrap: wrap;
-    gap: 12px 20px;
-    margin-bottom: 20px;
+    width: 100%;
 }
-.backBtnBox {
-    width: calc(100% - 445px);
-    display: inline-block;
-    vertical-align: middle;
-    height: 48px;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(3px);
-    border-radius: 30px;
-    border: 1px solid #ccc;
+
+.mapLeftArea{
+    width: 360px;
+    background-color: #fff;
+    border-right: 1px solid #DDDDDD;
+    box-sizing: border-box;
+}
+.mapControlArea{
+    padding: 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.mapSearchBox {
     position: relative;
-    padding: 13px 20px;
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.8);
+    margin-bottom: 12px;
 }
-.backbtn {
+input[type=text].mapSearchInput{
+    padding: 0 50px;
+    width: 100%;
+    height: 48px;
+    background: url("../images/sub/ico_search_black.svg") no-repeat left 20px center;
+    border-radius: 20px;
+    border-color: #CCCCCC;
+}
+.mapSearchBtn{
     position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 20px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    display: inline-block;
     padding: 0;
-    background: none;
+    width:  20px;
+    height: 20px;
+    background: #CDD1D5;
+    border-radius: 20px;
+}
+.mapSearchBtn .ico{
+    width:  10px;
+    height: 10px;
+    background: url("../images/sub/ico_close.svg")no-repeat center;
 }
 
 .currentAddress {
@@ -50,12 +67,12 @@
     margin-left: 28px;
 }
 .areaSelectBoxWrap {
-    width: 425px;
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
     vertical-align: middle;
     box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.8);
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    display: inline-flex;
 }
 
 .areaSelectBox {
@@ -65,19 +82,20 @@
 .areaSelectBox + .areaSelectBox {
     border-left: 1px solid #ccc;
 }
-// .areaSelectBox .areaOptionList {border:0;}
 .areaOptionList {
     top: 100%;
     left: 0;
     padding: 8px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.8);
     position: absolute;
     width: 100%;
     max-height: 300px;
     overflow-y: auto;
     border: 1px solid #ccc;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 .areaOptionCurrent {
     display: inline-block;
@@ -92,6 +110,7 @@
     backdrop-filter: blur(3px);
     position: relative;
     padding: 0 50px 0 20px;
+    border-color: #CCCCCC;
 }
 .areaSelectBox:nth-child(1) .areaOptionCurrent {
     border-radius: 30px 0 0 30px;
@@ -108,14 +127,220 @@
     transition: 0.3s ease;
 }
 .areaOption:hover {
-    background-color: #f6f8fa;
+    background-color: #f7fbff;
 }
 .areaOption.active {
-    background-color: #eef2f7;
+    background-color: #EEF2F7;
     color: #182c77;
 }
+
+.mapResultListWrap{
+    padding: 20px;
+    padding-right: 4px;
+}
+.mapResultTitle{
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.mapResultNum{
+    margin-left: 4px;
+    font-weight: 400;
+    color: #585858;
+}
+.mapResultList{
+    padding-right: 14px;
+    height: 637px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.mapResultList::-webkit-scrollbar {
+    width: 8px;
+    padding-right: 6px;
+}
+.mapResultList::-webkit-scrollbar-thumb {
+    width: 8px;
+    background: #676767;
+}
+.mapResultList::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 50px;
+}
+.mapResultItem{
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 14px;
+    transition: .3s ease;
+    cursor: pointer;
+
+    &.active{
+        background-color: #EBF5FF;
+    }
+    &:hover{
+        background-color: #f7fbff;
+    }
+}
+.itemTitle{
+    margin-bottom: 10px;
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 20px 24px;
+    font-weight: 600;
+    line-height: 150%;
+
+    &.recycle { background-image: url("../images/sub/ico_pin_recycle.svg"); }
+    &.freecollect { background-image: url("../images/sub/ico_pin_freecollect.svg"); }
+    &.swap { background-image: url("../images/sub/ico_pin_swap.svg"); }
+    &.box { background-image: url("../images/sub/ico_pin_box.svg"); }
+    &.battery { background-image: url("../images/sub/ico_pin_battery.svg");}
+    &.lamp { background-image: url("../images/sub/ico_pin_lamp.svg"); }
+    &.clothes { background-image: url("../images/sub/ico_pin_clothes.svg"); }
+    &.oil{ background-image: url("../images/sub/ico_pin_oil.svg"); }
+    &.medicine { background-image: url("../images/sub/ico_pin_medicine.svg"); }
+    &.etc { background-image: url("../images/sub/ico_pin_etc.svg"); }
+    &.rfid { background-image: url("../images/sub/ico_pin_rfid.svg"); }
+    &.bag { background-image: url("../images/sub/ico_pin_bag.svg"); }
+}
+.itemAddress{
+    margin-bottom: 10px;
+    padding-left: 24px;
+    background: url("../images/sub/ico_location.svg") no-repeat 0 3px;
+}
+.itemDesc{
+    padding-left: 24px;
+    background: url("../images/sub/ico_trash.svg") no-repeat 0 0;
+    color: #585858;
+}
+.mapRightArea{
+    position: relative;
+    width: calc(100% - 360px);
+}
 .mapSelectWrap {
-    width: 100%;
+    position: absolute;
+    right: 18px;
+    left: 11px;
+    top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.selectButton{
+    padding: 10px 4px;
+    padding-left: 34px;
+    background: #FFF no-repeat left 4px center;
+    border-radius: 100px;
+    font-size: 14px;
+    box-shadow: 2px 2px 4px 0px #00000066;
+    text-align: left;
+
+    &.all { background-image: url("../images/sub/ico_cate_all.svg"); }
+    &.recycle { background-image: url("../images/sub/ico_cate_recycle.svg"); }
+    &.freecollect { background-image: url("../images/sub/ico_cate_freecollect.svg"); }
+    &.swap { background-image: url("../images/sub/ico_cate_swap.svg"); }
+    &.box { background-image: url("../images/sub/ico_cate_box.svg"); }
+    &.battery { background-image: url("../images/sub/ico_cate_battery.svg"); }
+    &.lamp { background-image: url("../images/sub/ico_cate_lamp.svg"); }
+    &.clothes { background-image: url("../images/sub/ico_cate_clothes.svg"); }
+    &.oil{ background-image: url("../images/sub/ico_cate_oil.svg"); }
+    &.medicine { background-image: url("../images/sub/ico_cate_medicine.svg"); }
+    &.etc { background-image: url("../images/sub/ico_cate_etc.svg"); }
+    &.rfid { background-image: url("../images/sub/ico_cate_rfid.svg"); }
+    &.bag { background-image: url("../images/sub/ico_cate_bag.svg"); }
+}
+.selectButton.active{
+    &.all { background-image: url("../images/sub/ico_cate_all-active.svg"); }
+    &.recycle { background-image: url("../images/sub/ico_cate_recycle-active.svg"); }
+    &.freecollect { background-image: url("../images/sub/ico_cate_freecollect-active.svg"); }
+    &.swap { background-image: url("../images/sub/ico_cate_swap-active.svg"); }
+    &.box { background-image: url("../images/sub/ico_cate_box-active.svg"); }
+    &.battery { background-image: url("../images/sub/ico_cate_battery-active.svg"); }
+    &.lamp { background-image: url("../images/sub/ico_cate_lamp-active.svg"); }
+    &.clothes { background-image: url("../images/sub/ico_cate_clothes-active.svg"); }
+    &.oil{ background-image: url("../images/sub/ico_cate_oil-active.svg"); }
+    &.medicine { background-image: url("../images/sub/ico_cate_medicine-active.svg"); }
+    &.etc { background-image: url("../images/sub/ico_cate_etc-active.svg"); }
+    &.rfid { background-image: url("../images/sub/ico_cate_rfid-active.svg"); }
+    &.bag { background-image: url("../images/sub/ico_cate_bag-active.svg"); }
+}
+
+.mapPin{
+    position: absolute;
+    width: 20px;
+    height: 24px;
+    border-radius: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &.all {
+        left: 23%;
+        top: 32%; 
+        background-image: url("../images/sub/ico_pin_all.svg"); 
+    }
+    &.recycle {
+        left: 33%; 
+        top: 23%; 
+        background-image: url("../images/sub/ico_pin_recycle.svg"); 
+    }
+    &.freecollect {
+        left: 45%; 
+        top: 45%; 
+        background-image: url("../images/sub/ico_pin_freecollect.svg"); 
+    }
+    &.swap {
+        left: 57%; 
+        top: 25%; 
+        background-image: url("../images/sub/ico_pin_swap.svg"); 
+    }
+    &.box { 
+        left: 69%; 
+        top: 35%; 
+        background-image: url("../images/sub/ico_pin_box.svg"); 
+    }
+    &.battery { 
+        left: 71%; 
+        top: 45%; 
+        background-image: url("../images/sub/ico_pin_battery.svg"); 
+    }
+    &.lamp { 
+        left: 63%; 
+        top: 55%; 
+        background-image: url("../images/sub/ico_pin_lamp.svg"); 
+    }
+    &.clothes { 
+        left: 23%; 
+        top: 65%; 
+        background-image: url("../images/sub/ico_pin_clothes.svg"); 
+    }
+    &.oil{ 
+        left: 33%; 
+        top: 57%; 
+        background-image: url("../images/sub/ico_pin_oil.svg"); 
+    }
+    &.medicine { 
+        left: 45%; 
+        top: 58%; 
+        background-image: url("../images/sub/ico_pin_medicine.svg"); 
+    }
+    &.etc { 
+        left: 57%; 
+        top: 52%; 
+        background-image: url("../images/sub/ico_pin_etc.svg"); 
+    }
+    &.rfid { 
+        left: 60%; 
+        top: 39%; 
+        background-image: url("../images/sub/ico_pin_rfid.svg"); 
+    }
+    &.bag { 
+        left: 81%; 
+        top: 45%; 
+        background-image: url("../images/sub/ico_pin_bag.svg"); 
+    }
 }
 
 .mapIco {
