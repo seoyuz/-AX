@@ -346,7 +346,7 @@ legend {
   margin-top: 0px;
   width: 17px;
   height: 17px;
-  background: url("/images/common/ico_newpage.svg") center no-repeat;
+  background: url("../images/common/ico_newpage.svg") center no-repeat;
   position: absolute;
   right: 2px;
   top: 50%;

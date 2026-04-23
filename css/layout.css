@@ -62,13 +62,13 @@
   background-size: contain;
 }
 .depth1Icon.faq {
-  background-image: url("/images/common/ico_faq.png");
+  background-image: url("../images/common/ico_faq.png");
 }
 .depth1Icon.bell {
-  background-image: url("/images/common/ico_bell.png");
+  background-image: url("../images/common/ico_bell.png");
 }
 .depth1Icon.download {
-  background-image: url("/images/common/ico_down.png");
+  background-image: url("../images/common/ico_down.png");
 }
 
 .depth2 {

@@ -61,13 +61,13 @@
         background-repeat: no-repeat;
         background-size: contain;
         &.faq {
-            background-image: url("/images/common/ico_faq.png");
+            background-image: url("../images/common/ico_faq.png");
         }
         &.bell {
-            background-image: url("/images/common/ico_bell.png");
+            background-image: url("../images/common/ico_bell.png");
         }
         &.download {
-            background-image: url("/images/common/ico_down.png");
+            background-image: url("../images/common/ico_down.png");
         }
     }
 }
