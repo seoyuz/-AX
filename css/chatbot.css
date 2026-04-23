@@ -42,6 +42,10 @@
   border-bottom: 1px solid #4A4A4A;
 }
 
+.chatBubble .message:last-child {
+  border-bottom: 0;
+}
+
 .chatBubble p {
   margin-top: 10px;
 }
@@ -78,6 +82,20 @@
   border-radius: 5px;
   background-color: #444;
   top: 8px;
+}
+
+.chatBubble ul > li > ul > li {
+  padding-left: 10px;
+}
+
+.chatBubble ul > li > ul > li::before {
+  left: 0;
+}
+
+.ulList.type2 li::before {
+  height: 1px;
+  width: 5px;
+  top: 10px;
 }
 
 .colbox {
