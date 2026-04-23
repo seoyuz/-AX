@@ -39,6 +39,7 @@
   padding: 12px 10px;
   font-size: 16px;
   word-break: break-all;
+  border-bottom: 1px solid #4A4A4A;
 }
 
 .chatBubble p {
@@ -47,6 +48,14 @@
 
 .chatBubble strong {
   font-weight: 600;
+  font-size: 18px;
+}
+
+.chatBubble .itemName {
+  padding: 2px 8px;
+  background-color: #EBF5FF;
+  border: 1px dashed #345AE4;
+  border-radius: 10px;
   font-size: 16px;
 }
 
@@ -56,18 +65,34 @@
 
 .chatBubble ul li {
   position: relative;
-  padding-left: 12px;
+  padding-left: 40px;
+  margin-top: 8px;
 }
 
 .chatBubble ul li::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 30px;
   width: 3px;
   height: 3px;
   border-radius: 5px;
   background-color: #444;
-  top: 6px;
+  top: 8px;
+}
+
+.colbox {
+  gap: 8px;
+  display: flex;
+}
+
+.liTitle {
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.liText {
+  font-size: 16px;
 }
 
 .chatBubble table {
@@ -117,9 +142,7 @@
 }
 
 .chatBubble.ai .message {
-  font-size: 14px;
-  align-self: flex-start;
-  border-radius: 0 20px 20px 20px;
+  padding: 20px 16px;
 }
 
 .chatBubble.user + .chatBubble.ai {
@@ -440,4 +463,20 @@ input[type=text].mainSearch {
 
 .chatbotWrap::-webkit-scrollbar-track {
   background: #f5f5f5;
+}
+
+.messageQuestion {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2C2C2C;
+  padding: 12px 16px;
+  border-bottom: 1px solid #4A4A4A;
+}
+
+.colorRed {
+  color: #F02345;
+}
+
+.colorBlue {
+  color: #0B50D0;
 }
